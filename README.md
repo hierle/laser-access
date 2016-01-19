@@ -12,9 +12,11 @@ holding breakout modules for RTC, NFC, Wifi (ESP8862-1), I2C-EEPROM and TFT touc
 
 It's reading NFC (Mifare) cards nerby, comparing the serial to a database in internal eeprom,
 granting access to known serials only. If tag serial is found in database, then
-- card holder name and phone number (stored on the card) are displayed
 - the 230V main relais of the laser cutter is turned on
+- card holder name and phone number (stored on the card) are displayed
+
 If the dedicated "Update" card is seen, the database (of allowed card serial numbers), is downloaded from a Raspberry Pi Wifi access point.
+
 Internal 4k eeprom of the Mega board holds up to 1000 users, external EEPROM holds up to 64kBytes log events.
 
 Libraries used:
