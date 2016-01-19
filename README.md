@@ -10,14 +10,14 @@ Easy update of tag database via Wifi link to a central access db. This is runnin
 The software is running on an Arduino Mega 2560, packed with a "shield" (eagle files included),
 holding breakout modules for RTC, NFC, Wifi (ESP8862-1), I2C-EEPROM and TFT touch display.
 
-It's reading NFC (Mifare) cards nerby, comparing the serial to a database in internal eeprom,
-granting access to known serials only. If tag serial is found in database, then
+It's reading NFC (Mifare) cards dropped in, comparing the serial to a database in internal eeprom,
+granting access to known serials only. If the tag serial number is found in eeprom database, then
 - the 230V main relais of the laser cutter is turned on
-- card holder name and phone number (stored on the card) are displayed
+- user name and phone number (both stored on the card) are displayed
 
-If the dedicated "Update" card is seen, the database (of allowed card serial numbers), is downloaded from a Raspberry Pi Wifi access point.
+If the dedicated "update card" is seen, the database (of allowed card serial numbers) is downloaded from a (Raspberry Pi) Wifi access point.
 
-Internal 4k eeprom of the Mega board holds up to 1000 users, external EEPROM holds up to 64kBytes log events.
+Internal 4k eeprom of the Mega board allows for up to 1000 users, external EEPROM holds up to 64kBytes log events.
 
 Libraries used:
 
