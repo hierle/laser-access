@@ -2,12 +2,16 @@
 
 Access system for a laser cutter (or any other electric machine), based on Arduino, ESP8266 and NFC member cards.
 Easy update of access data via Wifi link to central access db. Running just fine here at Fablab Munich :)
-
-Includes PCB (eagle) files for a custom shield and DXF drawing for laser cut housing.
-
 Basically the system is restricting access to a laser cutter to valid members only.
 
-This is running on an Arduino Mega 2560, packed with a "shield" (eagle files included),
+* Arduino software
+
+* PCB (eagle) files for a custom shield
+
+* DXF drawing for laser cut housing
+
+
+Software is running on an Arduino Mega 2560, packed with a "shield" (eagle files included),
 holding breakout modules for RTC, NFC, Wifi (ESP8862-1), I2C-EEPROM and TFT touch display.
 
 It's reading NFC (Mifare) cards, comparing the serial to a database in internal eeprom,
@@ -17,5 +21,13 @@ The database containing the valid members (card serial numbers), is download fro
 once a dedicated "Update" card is seen.
 
 Internal 4k eeprom of the Mega board holds up to 1000 users, external EEPROM holds up to 64kBytes log events.
+
+Libraries used:
+
+- https://github.com/adafruit/Adafruit_NFCShield_I2C
+- https://github.com/adafruit/Adafruit-GFX-Library
+- https://github.com/adafruit/Adafruit_ILI9341
+- https://github.com/adafruit/Adafruit_STMPE610
+
 
 Have fun :)
