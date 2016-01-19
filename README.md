@@ -4,6 +4,8 @@ Access system for a laser cutter (or any other electric machine), based on Ardui
 Easy update of access data via Wifi link to central access db. Running just fine here at Fablab Munich :)
 Basically the system is restricting access to a laser cutter to valid members only.
 
+           |
+-----------|--------------
 [./eagle](https://github.com/hierle/laser-access/eagle/)	|		PCB (eagle) files for custom shield
 [./housing](https://github.com/hierle/laser-access/housing/)	|		DXF drawing for laser cut housing
 [./laser_access](https://github.com/hierle/laser-access/laser_access/)	| 	Arduino software
