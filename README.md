@@ -1,11 +1,11 @@
 # laser-access
 
-An access system for a laser cutter (or any other electric machine), based on Arduino, ESP8266 and NFC reader and member cards.
-Easy update of tag database via Wifi link to a central access db. This is running just fine for a while here at Fablab Munich :)
+An access system for a laser cutter (or any other electric system), based on Arduino, ESP8266 Wifi and NFC reader and member cards.
+Easy update of tag database via Wifi link to a central user db. This is running just fine for a while here at Fablab Munich :)
 
-* [./eagle](https://github.com/hierle/laser-access/eagle/)	&nbsp;		PCB (eagle) files for custom shield
-* [./housing](https://github.com/hierle/laser-access/housing/)	&nbsp;		DXF drawing for laser cut housing
-* [./laser_access](https://github.com/hierle/laser-access/laser_access/)	 	Arduino software
+* [./eagle](https://github.com/hierle/laser-access/eagle/) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PCB (eagle) files for custom shield
+* [./housing](https://github.com/hierle/laser-access/housing/) &nbsp;&nbsp;&nbsp; DXF drawing for laser cut housing
+* [./laser_access](https://github.com/hierle/laser-access/laser_access/) &nbsp; Arduino software
 
 The software is running on an Arduino Mega 2560, packed with a "shield" (eagle files included),
 holding breakout modules for RTC, NFC, Wifi (ESP8862-1), I2C-EEPROM and TFT touch display.
