@@ -4,14 +4,11 @@ Access system for a laser cutter (or any other electric machine), based on Ardui
 Easy update of access data via Wifi link to central access db. Running just fine here at Fablab Munich :)
 Basically the system is restricting access to a laser cutter to valid members only.
 
-* Arduino software
+* https://github.com/hierle/laser-access/eagle/		PCB (eagle) files for a custom shield
+* https://github.com/hierle/laser-access/housing/	DXF drawing for laser cut housing
+* https://github.com/hierle/laser-access/laser_access/	Arduino software
 
-* PCB (eagle) files for a custom shield
-
-* DXF drawing for laser cut housing
-
-
-Software is running on an Arduino Mega 2560, packed with a "shield" (eagle files included),
+This software is running on an Arduino Mega 2560, packed with a "shield" (eagle files included),
 holding breakout modules for RTC, NFC, Wifi (ESP8862-1), I2C-EEPROM and TFT touch display.
 
 It's reading NFC (Mifare) cards, comparing the serial to a database in internal eeprom,
